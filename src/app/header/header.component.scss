@@ -1,0 +1,45 @@
+#headerWrap{
+  height: 140px;
+}
+#header { 
+  height: 110px;
+  background-color: #0c2340;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#headerTitle { 
+  background: none;
+  position: relative;
+}
+.titleArea {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  padding-bottom: 3px;
+  text-align: right;
+}
+.mainHeading {
+  color: #fff;
+  display: block;
+}
+.subHeading {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding-top: 5px;
+}
+.nav {
+  background-color: #dd550c;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  height: 27px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navBottom {
+  background-color: #f68026;
+  height: 3px;
+  width: 100%;
+}
