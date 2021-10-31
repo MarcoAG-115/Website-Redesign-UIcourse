@@ -4,6 +4,10 @@ a, a:hover, a:visited {
   line-height: normal; 
   text-decoration:none; 
 }
+h1 {
+  color: #496e9c;
+  border-bottom: 2px solid #f9903f;
+}
 #contentArea {
   background: url(https://www.auburn.edu/template/styles/images/contentAreaBG.png) center left repeat-y;
   font-family: Lucida Grande, Geneva, Verdana, Arial, Helvetica, Swiss, SunSans-Regular, sans-serif;
@@ -11,6 +15,7 @@ a, a:hover, a:visited {
   margin: 0 auto;
   position: relative;
   width: 950px;
+  height: 506px;
 }
 .contentDivision {
   display: block;
