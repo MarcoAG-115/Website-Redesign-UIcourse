@@ -5,14 +5,17 @@
   font-size: 8pt;
   margin: 5px auto 0;
   overflow: hidden;
-  padding-top: 92px;
+  
+  padding-top: 300px; //originally 92px
+
+  background-position-y: 210px;
+  width: 100%;
 }
 #footer {
   background-color: #03244d;
   margin: -5px 0;
   overflow: hidden;
   padding: 18px 0 15px 0;
-  width: 100%;
 }
 #subfooter {
   border-top: 5px solid #dd550c;

@@ -33,7 +33,7 @@
   background-color: #dd550c;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 13px;
-  height: 27px;
+  height: 27px; //originally 27px
   width: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -42,4 +42,27 @@
   background-color: #f68026;
   height: 3px;
   width: 100%;
+}
+
+button {
+
+  cursor: pointer;
+  //border: 1px solid #3498db;
+  background-color: #dd550c;
+  height: 25px;
+  width: 100px;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+button:hover {
+
+  cursor: pointer;
+  border: 1px solid #3498db;
+  background-color: #0c2340;
+  height: 25px;
+  width: 100px;
+  color: #ffffff;
+  font-size: 1em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
