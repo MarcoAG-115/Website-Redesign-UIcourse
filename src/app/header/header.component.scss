@@ -29,40 +29,113 @@
   font-size: 16px;
   padding-top: 5px;
 }
-.nav {
-  background-color: #dd550c;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  height: 27px; //originally 27px
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-}
+// .nav {
+//   background-color: #dd550c;
+//   font-family: Verdana, Arial, Helvetica, sans-serif;
+//   font-size: 13px;
+//   height: 27px; //originally 27px
+//   width: 100%;
+//   text-align: center;
+//   text-transform: uppercase;
+// }
 .navBottom {
   background-color: #f68026;
   height: 3px;
   width: 100%;
 }
 
-button {
+// button {
 
-  cursor: pointer;
-  //border: 1px solid #3498db;
+//   cursor: pointer;
+//   //border: 1px solid #3498db;
+//   background-color: #dd550c;
+//   height: 25px;
+//   width: 100px;
+//   color: #ffffff;
+//   font-size: 1em;
+// }
+
+// button:hover {
+
+//   cursor: pointer;
+//   border: 1px solid #3498db;
+//   background-color: #0c2340;
+//   height: 25px;
+//   width: 100px;
+//   color: #ffffff;
+//   font-size: 1em;
+//   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+// }
+
+.links {
+	background-color: #123;
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+	font-weight: 300;
+}
+.links > button {
+	color: rgb(13, 22, 102);
   background-color: #dd550c;
-  height: 25px;
-  width: 100px;
-  color: #ffffff;
-  font-size: 1em;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:bold;
+  font-size: 13px;
+  border-style: none;
+}
+.links > button:hover {
+	background: #0c2340;
+	color: #dd550c;
+}
+.links > .line {
+	background: #68a;
+	height: 1px;
+	pointer-events: none;
+
 }
 
-button:hover {
-
-  cursor: pointer;
-  border: 1px solid #3498db;
-  background-color: #0c2340;
-  height: 25px;
-  width: 100px;
-  color: #ffffff;
-  font-size: 1em;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+/* The Magic */
+#Navheader {
+	// position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+  
+  width: 100%;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+
+  width: 100%;
+}
+.links > button:hover ~ .line {
+	opacity: 1;
+}
+
+.links > button:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > button:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > button:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > button:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > button:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > button:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > button:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > button:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > button:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > button:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > button:last-of-type:hover ~ .line { --index: var(--items); }

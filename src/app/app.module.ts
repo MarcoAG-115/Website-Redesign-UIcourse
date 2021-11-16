@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { CompPageComponent } from './compPage';
+import { ENGR1110Component } from './ENGR1110';
 import { appRoutingModule } from './app.routing';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
@@ -26,7 +27,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     ContentComponent,
     FooterComponent,
     CompPageComponent,
-    ContentComponent
+    ContentComponent,
+    ENGR1110Component
   ],
   imports: [
     BrowserModule,
