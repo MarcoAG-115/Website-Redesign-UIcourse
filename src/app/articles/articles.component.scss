@@ -1,0 +1,38 @@
+h1 {
+  color: #496e9c;
+  border-bottom: 2px solid #dd550c;
+}
+#contentArea {
+  font-family: Lucida Grande, Geneva, Verdana, Arial, Helvetica, Swiss, SunSans-Regular, sans-serif;
+  display: table;
+  margin: 0 auto;
+}
+.contentDivision {
+  display: block;
+  float: right;
+  padding: 0 20px 20px 20px;
+  position: relative;
+  width: 36vw;
+}
+.artBtn {
+  display: block;
+  color: #0c2340;
+  background-color: #f68026;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:bold;
+  font-size: 1em;
+  border: 2px solid #0c2340;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.artBtn:hover {
+  background: #0c2340;
+	color: #f68026;
+  border: 2px solid #f68026;
+}
