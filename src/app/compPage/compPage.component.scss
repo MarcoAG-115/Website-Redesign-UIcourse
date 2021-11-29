@@ -15,21 +15,15 @@ h3 {
 #contentArea {
   background: url(https://www.auburn.edu/template/styles/images/contentAreaBG.png) center left repeat-y;
   font-family: Lucida Grande, Geneva, Verdana, Arial, Helvetica, Swiss, SunSans-Regular, sans-serif;
-  display: block;
+  display: table;
   margin: 0 auto;
-  position: relative;
-  width: 950px;
-  height: 506px;
 }
 .contentDivision {
   display: block;
   float: right;
   padding: 0 20px 20px 20px;
   position: relative;
-  width: 688px;
-
-  height: 680px;
-  overflow-y: auto;
+  width: 36vw;
 }
 .sidebar {
   background: url(https://www.auburn.edu/template/styles/images/sidebarBlueGrad.png) #496e9c center bottom repeat-x;
@@ -37,8 +31,6 @@ h3 {
   display: block;
   float: left;
   width: 220px;
-
-  height: 700px;
 }
 .sidebar a {
   border-bottom: none;

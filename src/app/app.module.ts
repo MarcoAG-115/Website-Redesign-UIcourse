@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CompPageComponent } from './compPage';
 import { ENGR1110Component } from './ENGR1110';
 import { appRoutingModule } from './app.routing';
+import { ArticlesComponent } from './articles/articles.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -28,7 +29,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FooterComponent,
     CompPageComponent,
     ContentComponent,
-    ENGR1110Component
+    ENGR1110Component,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule,

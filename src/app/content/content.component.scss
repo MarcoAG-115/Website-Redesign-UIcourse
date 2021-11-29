@@ -6,23 +6,34 @@ a, a:hover, a:visited {
 }
 h1 {
   color: #496e9c;
-  border-bottom: 2px solid #f9903f;
+  border-bottom: 2px solid #dd550c;
 }
 #contentArea {
   background: url(https://www.auburn.edu/template/styles/images/contentAreaBG.png) center left repeat-y;
   font-family: Lucida Grande, Geneva, Verdana, Arial, Helvetica, Swiss, SunSans-Regular, sans-serif;
-  display: block;
+  display: table;
   margin: 0 auto;
-  position: relative;
-  width: 950px;
-  height: 506px;
 }
 .contentDivision {
   display: block;
   float: right;
   padding: 0 20px 20px 20px;
   position: relative;
-  width: 688px;
+  width: 36vw;
+}
+.about {
+  display: inline-block;
+}
+.hendrixImg {
+  float: left;
+  margin-right: 15px;
+  width: 150px;
+}
+.contact {
+  margin-top: 5px;
+}
+.address {
+  margin-left: 10px;
 }
 .sidebar {
   background: url(https://www.auburn.edu/template/styles/images/sidebarBlueGrad.png) #496e9c center bottom repeat-x;
@@ -56,5 +67,5 @@ h1 {
   height: 2px;
   margin: 20px auto;
   text-align: center;
-  width: 185px;
+  width: 10vw;
 }

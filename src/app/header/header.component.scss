@@ -29,44 +29,6 @@
   font-size: 16px;
   padding-top: 5px;
 }
-// .nav {
-//   background-color: #dd550c;
-//   font-family: Verdana, Arial, Helvetica, sans-serif;
-//   font-size: 13px;
-//   height: 27px; //originally 27px
-//   width: 100%;
-//   text-align: center;
-//   text-transform: uppercase;
-// }
-.navBottom {
-  background-color: #f68026;
-  height: 3px;
-  width: 100%;
-}
-
-// button {
-
-//   cursor: pointer;
-//   //border: 1px solid #3498db;
-//   background-color: #dd550c;
-//   height: 25px;
-//   width: 100px;
-//   color: #ffffff;
-//   font-size: 1em;
-// }
-
-// button:hover {
-
-//   cursor: pointer;
-//   border: 1px solid #3498db;
-//   background-color: #0c2340;
-//   height: 25px;
-//   width: 100px;
-//   color: #ffffff;
-//   font-size: 1em;
-//   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-// }
-
 .links {
 	background-color: #123;
 	background-image: linear-gradient(to bottom, #0003, transparent);
@@ -76,32 +38,32 @@
 	font-weight: 300;
 }
 .links > button {
-	color: rgb(13, 22, 102);
-  background-color: #dd550c;
-	padding: .75em;
+	color: #0c2340;
+  background-color: #f68026;
+	padding: .25em;
 	text-align: center;
 	text-decoration: none;
-	transition: all .5s;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight:bold;
-  font-size: 13px;
+  font-size: .5em;
   border-style: none;
 }
 .links > button:hover {
 	background: #0c2340;
-	color: #dd550c;
+	color: #f68026;
 }
 .links > .line {
 	background: #68a;
-	height: 1px;
+	height: 2px;
 	pointer-events: none;
-
 }
 
 /* The Magic */
 #Navheader {
-	// position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -116,13 +78,13 @@
 .links > .line {
 	opacity: 0;
 	transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
 	position: absolute;
 	bottom: 0;
 	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
 	width: var(--width, calc(100% / var(--items)));
 	--index: 0;
-
-  width: 100%;
 }
 .links > button:hover ~ .line {
 	opacity: 1;
